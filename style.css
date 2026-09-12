@@ -1,7 +1,7 @@
 * {
     margin: 0;
     font-family: Arial;
-    border: border-box;
+    box-sizing: border-box;
 }
 
 .navbar{
@@ -312,4 +312,372 @@ ul a{
 
 .copyright{
     padding-top: 5px;
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    /* Navbar */
+    .navbar {
+        height: auto;
+        min-height: 105px;
+        padding: 7px 6px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 4px;
+    }
+
+    .nav-logo {
+        width: 85px;
+        height: 40px;
+        flex-shrink: 0;
+    }
+
+    .nav-address {
+        margin: 0;
+        width: 60px;
+        flex-shrink: 0;
+    }
+
+    .add-first {
+        font-size: 0.6rem;
+        margin-left: 0;
+    }
+
+    .add-second {
+        font-size: 0.75rem;
+        margin-left: 3px;
+    }
+
+    .nav-language {
+        display: none;
+    }
+
+    .nav-signin {
+        margin: 3px;
+        flex-shrink: 0;
+    }
+
+    .nav-second {
+        font-size: 0.7rem;
+    }
+
+    .nav-returns {
+        display: none;
+    }
+
+    .nav-cart {
+        margin: 3px;
+        flex-shrink: 0;
+        white-space: nowrap;
+    }
+
+    .nav-cart i {
+        font-size: 22px;
+    }
+
+    .nav-search {
+        order: 10;
+        flex-basis: 100%;
+        width: 100%;
+        height: 40px;
+        margin: 5px 0 0;
+    }
+
+
+    /* Panel */
+    .panel {
+        height: auto;
+        min-height: 40px;
+        padding: 8px 5px;
+        overflow-x: auto;
+        justify-content: flex-start;
+        white-space: nowrap;
+    }
+
+    .panel-options {
+        width: auto;
+    }
+
+    .panel-options a {
+        margin-left: 10px;
+    }
+
+    .panel-deales {
+        margin-left: 15px;
+    }
+
+
+    /* Hero */
+    .hero-section {
+        height: 220px;
+        background-position: center;
+    }
+
+    .hero-msg {
+        width: 92%;
+        height: auto;
+        min-height: 40px;
+        padding: 5px 10px;
+        text-align: center;
+        font-size: 0.75rem;
+        margin-bottom: 12px;
+    }
+
+
+    /* Shopping */
+    .shopping-section {
+        padding: 15px 8px;
+        gap: 10px;
+    }
+
+    .box {
+        width: calc(50% - 5px);
+        padding: 12px 0 10px;
+        margin-bottom: 0;
+    }
+
+    .box-img {
+        height: 180px;
+        margin-bottom: 10px;
+    }
+
+    .box-content {
+        margin: 0 10px;
+    }
+
+    .box-content h2 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .box-content p {
+        font-size: 12px;
+    }
+
+
+    /* Footer */
+    .foot-panel1 {
+        height: 45px;
+        font-size: 0.75rem;
+    }
+
+    .foot-panel2 {
+        height: auto;
+        min-height: 350px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .foot-panel2 ul {
+        margin-top: 15px;
+    }
+
+    .foot-panel2 ul a {
+        font-size: 0.75rem;
+        margin-top: 8px;
+    }
+
+    .foot-panel3 {
+        height: 65px;
+    }
+
+    .foot-panel4 {
+        height: auto;
+        min-height: 75px;
+        padding-bottom: 10px;
+    }
+
+    .pages {
+        padding-top: 18px;
+    }
+}
+
+
+/* Small phones */
+@media (max-width: 480px) {
+
+    .navbar {
+        min-height: 105px;
+        padding: 6px 4px;
+        gap: 2px;
+    }
+
+    .nav-logo {
+        width: 78px;
+        height: 38px;
+    }
+
+    .nav-logo .logo {
+    width: 100%;
+    height: 38px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+    .nav-address {
+        width: 58px;
+    }
+
+    .add-first {
+        font-size: 0.55rem;
+    }
+
+    .add-second {
+        font-size: 0.7rem;
+    }
+
+    .nav-signin {
+        margin: 2px;
+    }
+
+    .nav-second {
+        font-size: 0.62rem;
+    }
+
+    .nav-cart {
+        margin: 2px;
+    }
+
+    .nav-cart i {
+        font-size: 20px;
+    }
+
+    .nav-search {
+        margin-top: 5px;
+    }
+
+    .hero-section {
+        height: 190px;
+    }
+
+    .hero-msg {
+        font-size: 0.7rem;
+    }
+
+    .shopping-section {
+        padding: 10px 6px;
+        gap: 8px;
+    }
+
+    .box {
+        width: calc(50% - 4px);
+    }
+
+    .box-img {
+        height: 140px;
+    }
+
+    .box-content {
+        margin: 0 8px;
+    }
+
+    .box-content h2 {
+        font-size: 14px;
+    }
+
+    .box-content p {
+        font-size: 11px;
+    }
+}
+
+
+/* Very small phones */
+@media (max-width: 360px) {
+
+    .navbar {
+        min-height: 102px;
+        padding: 6px 3px;
+        gap: 1px;
+        overflow: hidden;
+    }
+
+    .nav-logo {
+        width: 68px;
+        height: 36px;
+        flex-shrink: 0;
+    }
+
+    .nav-logo .logo {
+        width: 100%;
+        height: 36px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: left center;
+    }
+
+    .nav-address {
+        width: 48px;
+        flex-shrink: 0;
+    }
+
+    .add-first {
+        font-size: 0.5rem;
+    }
+
+    .add-second {
+        font-size: 0.65rem;
+    }
+
+    .nav-signin {
+        margin: 1px;
+        flex-shrink: 0;
+    }
+
+    .nav-signin span {
+        font-size: 0.55rem;
+    }
+
+    .nav-second {
+        font-size: 0.58rem;
+    }
+
+    .nav-cart {
+        margin: 1px;
+        font-size: 0.7rem;
+        flex-shrink: 0;
+    }
+
+    .nav-cart i {
+        font-size: 18px;
+    }
+
+    .nav-search {
+        width: 100%;
+        flex-basis: 100%;
+        height: 38px;
+        margin-top: 5px;
+    }
+
+    .Search-select {
+        width: 45px;
+    }
+
+    .Search-icon {
+        width: 48px;
+    }
+
+    .Search-input {
+        font-size: 0.85rem;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    .box-img {
+        height: 200px;
+    }
+
+    .hero-section {
+        height: 170px;
+    }
 }
